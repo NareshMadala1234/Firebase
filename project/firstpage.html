@@ -1,0 +1,34 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/src/form.css">
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
+    <script src="app.js">    </script>
+
+    </head> 
+    <body style="background-color:skyblue">
+       
+       <div id="formContainer " style="margin-top: 150px;"> 
+           <div class="container" style="border:black;">
+            <h2 style="margin-left: 500px;color:black;font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;">Registration form</h2>
+               <li style="list-style:none">
+          
+            <li  style="list-style:none;margin-left: 500px; margin-top: 30px;"><input style="width: 400px; height: 40px;" type="email" placeholder="Enter your email" id="email"></input></li>
+            <li  style="list-style:none;margin-left: 500px; margin-top: 30px;"><input style="width: 400px; height: 40px;" type="password" placeholder="Enter your password" id="password"> </input></li>
+           </li>
+             <button style="margin-left: 650px; margin-top: 40px; width: 100px;background-color: #ff4d4d; border-radius: 25px; font-weight: Thin;" onclick="signUp()"> Sign Up</button>
+     
+             <h2 style="margin-left: 500px;">Already Registerd</h2>
+             <button style="margin-left: 650px; margin-top: 40px; width: 100px;background-color: #ff4d4d; border-radius: 25px; font-weight: Thin;"  onclick="window.location.href='form.html'" >Sign In</button>
+     
+           </div>
+      
+    </div>
+</body>
+</html>

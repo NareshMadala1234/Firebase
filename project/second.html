@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Second Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-analytics.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-auth.js"></script>
+  
+<style>
+
+body{
+    background-color : #ff00aa;
+}
+.card{
+    background-color:#ff4d4d;
+     border: 2px solid black;
+}
+#post{
+    margin: 2px;
+}
+#image{
+    margin: 2px;
+}
+#uploads{
+    background-color: #81ecec ;
+    color: black;
+    font-weight:2px;
+    border: 2px solid white;
+}
+</style>
+    </head>
+    <body>
+        
+
+            <div class="dropdown">
+                <button class="dropbtn">options</button>
+                <div class="dropdown-content">
+                    <a  style="font-family: 'Courier New', Courier, monospace;"class="nav-item nav-link" href="#" onclick="myData()" >my data</a>
+                    <a  style="font-family: 'Courier New', Courier, monospace;" class="nav-item nav-link"  href="#" onclick="getData()">all data</a>
+                   <a  style="font-family: 'Courier New', Courier, monospace;" class="nav-item nav-link"  href="#" onclick="logout()">Logout</a>
+                  
+                </div>
+              </div>
+
+          </nav>
+
+        
+            
+                        <h3 style="font-family: 'Courier New', Courier, monospace; margin-left: 300px;">visible data</h3>  
+                    
+                        <textarea id="post" class="form-control" style="width: 1000px; height: 100px; margin-left: 20px;" >  </textarea>
+                        <input type="file" class="form-control" id="image" accept="images/*" style="margin-left: 500px; width: 250px;" >
+                        <div class="textarea"> 
+        <button type="button" id="uploads" class="btn btn-success" onclick="upload()" style="margin-left: 600px; border-radius: 15px; background-color: red; color: white; font-family: Courier, monospace;">  upload  </button> 
+                        
+                        
+
+            <div class="row mt-4" id="posts">
+                
+            </div>
+        </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase.js"></script>
+
+
+<script>
+var firebaseConfig = {
+  apiKey: "AIzaSyDpI1jPtILEYRCpSoWHmhQkSW0k-NS0DYo",
+  authDomain: "login-demo-da839.firebaseapp.com",
+  databaseURL: "https://login-demo-da839-default-rtdb.firebaseio.com",
+  projectId: "login-demo-da839",
+  storageBucket: "login-demo-da839.appspot.com",
+  messagingSenderId: "616595246835",
+  appId: "1:616595246835:web:0063f95ce39d52ebddb186",
+  measurementId: "G-8KS63CB5T2"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);  
+</script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="second.js"></script>
+        
+
+</body>
+</html>
